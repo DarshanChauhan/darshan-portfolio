@@ -332,3 +332,8 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.opacity = '1';
     }, 100);
 });
+
+const scrollIndicator = document.querySelector('.scroll-indicator');
+if (window.innerWidth <= 1024) {
+    scrollIndicator?.remove();
+}
