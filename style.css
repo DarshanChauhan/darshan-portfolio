@@ -1,6 +1,3 @@
-/* ========================================
-   RESET & BASE
-   ======================================== */
 *,
 *::before,
 *::after {
@@ -74,9 +71,6 @@ ul {
     list-style: none;
 }
 
-/* ========================================
-   PRELOADER
-   ======================================== */
 #preloader {
     position: fixed;
     inset: 0;
@@ -129,9 +123,6 @@ ul {
     }
 }
 
-/* ========================================
-   CUSTOM CURSOR
-   ======================================== */
 .cursor-dot {
     position: fixed;
     width: 6px;
@@ -175,9 +166,6 @@ body:hover .cursor-ring {
     }
 }
 
-/* ========================================
-   NAVIGATION
-   ======================================== */
 #navbar {
     position: fixed;
     top: 0;
@@ -259,7 +247,6 @@ body:hover .cursor-ring {
     transform: rotate(-45deg) translate(4px, -5px);
 }
 
-/* Mobile Menu */
 .mobile-menu {
     position: fixed;
     inset: 0;
@@ -329,9 +316,6 @@ body:hover .cursor-ring {
     transition-delay: 0.4s;
 }
 
-/* ========================================
-   HERO
-   ======================================== */
 .hero {
     position: relative;
     min-height: 100vh;
@@ -564,6 +548,12 @@ body:hover .cursor-ring {
     gap: 8px;
 }
 
+@media (max-width: 1024px) {
+    .scroll-indicator {
+        display: none;
+    }
+}
+
 .scroll-line {
     width: 1px;
     height: 60px;
@@ -600,9 +590,6 @@ body:hover .cursor-ring {
     opacity: 0.3;
 }
 
-/* ========================================
-   SECTIONS
-   ======================================== */
 .section {
     padding: 160px 0;
     position: relative;
@@ -635,9 +622,6 @@ body:hover .cursor-ring {
     letter-spacing: -0.03em;
 }
 
-/* ========================================
-   GLASS CARD
-   ======================================== */
 .glass-card {
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
@@ -662,9 +646,6 @@ body:hover .cursor-ring {
     transform: translateY(-4px);
 }
 
-/* ========================================
-   ABOUT
-   ======================================== */
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -780,9 +761,6 @@ body:hover .cursor-ring {
     }
 }
 
-/* ========================================
-   EXPERIENCE TIMELINE
-   ======================================== */
 .timeline {
     position: relative;
     padding-left: 60px;
@@ -924,9 +902,6 @@ body:hover .cursor-ring {
     border-color: rgba(255, 255, 255, 0.2);
 }
 
-/* ========================================
-   PROJECTS
-   ======================================== */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1029,9 +1004,6 @@ body:hover .cursor-ring {
     border-color: rgba(255, 255, 255, 0.15);
 }
 
-/* ========================================
-   SKILLS
-   ======================================== */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1072,9 +1044,6 @@ body:hover .cursor-ring {
     transform: translateY(-2px);
 }
 
-/* ========================================
-   AI SECTION
-   ======================================== */
 .ai-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -1178,9 +1147,6 @@ body:hover .cursor-ring {
     opacity: 0.35;
 }
 
-/* ========================================
-   LEADERSHIP
-   ======================================== */
 .leadership-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1215,9 +1181,6 @@ body:hover .cursor-ring {
     line-height: 1.6;
 }
 
-/* ========================================
-   AWARD
-   ======================================== */
 .award-inner {
     text-align: center;
     padding: 80px 40px;
@@ -1263,9 +1226,6 @@ body:hover .cursor-ring {
     opacity: 0.5;
 }
 
-/* ========================================
-   EDUCATION
-   ======================================== */
 .edu-card {
     max-width: 600px;
     padding: 48px;
@@ -1292,9 +1252,6 @@ body:hover .cursor-ring {
     text-transform: uppercase;
 }
 
-/* ========================================
-   CONTACT
-   ======================================== */
 .contact-content {
     text-align: center;
     max-width: 640px;
@@ -1327,9 +1284,6 @@ body:hover .cursor-ring {
     margin-top: 48px;
 }
 
-/* ========================================
-   FOOTER
-   ======================================== */
 .footer {
     padding: 80px 0 40px;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -1378,9 +1332,6 @@ body:hover .cursor-ring {
     letter-spacing: 0.05em;
 }
 
-/* ========================================
-   ANIMATIONS
-   ======================================== */
 .reveal-up,
 .reveal-left,
 .reveal-right {
@@ -1407,9 +1358,6 @@ body:hover .cursor-ring {
     transform: translate(0);
 }
 
-/* ========================================
-   RESPONSIVE
-   ======================================== */
 @media (max-width: 1200px) {
     .leadership-grid {
         grid-template-columns: repeat(2, 1fr);
